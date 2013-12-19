@@ -1,0 +1,27 @@
+/* =Variables
+----------------------------------------------- */
+
+// fonts
+$f-sans: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+$f-serif: 'Libre Baskerville', 'Baskerville', 'Georgia', serif;
+
+// colors
+$c1: #ffff66; //yellow
+$c2: #8bcbff; //blue
+$c3: #85eb99; //green
+$c4: #ffa5d8; //pink
+$c5: #fefefe; //white
+$c6: #404004; //dark gray
+$c7: #fceabd; //tan
+
+// mixins
+@mixin font-size($sizeValue: 16, $line: 1.5){
+    font-size: $sizeValue + px;
+    font-size: ($sizeValue / 10) + rem;
+    line-height: $line;
+} // automatically apply rem font-size with px fallback and add 1.5 line-height. default is 16px/1.6rem+1.5
+
+@mixin background($color){
+	background-color: $color;
+	background-image: url('http://localhost/wordpress/ltb/wp-content/uploads/sites/2/2013/12/bg1.png');
+} // background-color/-image mixin
