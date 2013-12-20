@@ -1,11 +1,53 @@
-/* =Menu
+/* =Header
 ----------------------------------------------- */
 
+.site-header {
+	border-bottom: 2px solid $c3;
+	margin: 5.6rem auto 2.8rem;
+	max-width: 1170px;
+	width: 90%;
+}
+
+.site-branding {
+	float: left;
+	width: 50%;
+}
+
+.site-title {
+	font-weight: 400;
+	letter-spacing: 0.4rem;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+	@include font-size(36);
+
+	a, a:visited {
+		color: $c6;
+		word-spacing: 20px;
+		text-decoration: none;
+
+		&:hover, &:focus { border-bottom: 2px dashed $c2; color: lighten($c6, 20%); }
+		&:active { border-bottom-style: solid; color: darken($c6, 10%); }
+	}
+	
+	span {
+		position: relative;
+		
+		&:before {
+			background-color: $c3;
+			content: "";
+			display: inline-block;
+			height: 54px;
+			left: -24px;
+			position: absolute;
+			width: 10px;
+		}
+	}
+} //end .site-title
+
 .main-navigation {
-	clear: both;
 	display: block;
 	float: left;
-	width: 100%;
+	width: 50%;
 }
 .main-navigation ul {
 	list-style: none;
