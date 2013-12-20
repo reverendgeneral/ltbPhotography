@@ -28,7 +28,9 @@ hr {
 
 /* Text elements */
 p {
-	margin-bottom: 1.5em;
+	margin-bottom: 1.5rem;
+
+	@include font-size(20);
 }
 ul, ol {
 	margin: 0 0 1.5em 3em;

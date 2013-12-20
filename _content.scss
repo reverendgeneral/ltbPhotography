@@ -1,12 +1,14 @@
 /* =Content
 ----------------------------------------------- */
 
+.home .entry-content p { margin: 0; }
+
 .entry-title { display: none; }
 
 .sticky {
 }
 .hentry {
-	margin: 0 0 1.5em;
+	margin: 0;
 }
 .byline,
 .updated {
@@ -19,9 +21,26 @@
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 0;
+	margin: 0 auto;
+	max-width: 1170px;
+	width: 90%;
 }
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+footer.entry-meta { display: none; }
+
+.site-footer {
+	border-top: 2px solid $c3;
+	margin: 2.8rem auto 5.6rem;
+	max-width: 1170px;
+	width: 90%;
+}
+
+.site-info {
+	margin-top: 2.8rem;
+	
+	& > p { @include font-size(16); }
 }
