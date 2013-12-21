@@ -25,7 +25,7 @@
 		word-spacing: 20px;
 		text-decoration: none;
 
-		&:hover, &:focus { border-bottom: 2px dashed $c2; color: lighten($c6, 20%); }
+		&:hover, &:focus { border-bottom: 2px dashed $c4; color: lighten($c6, 20%); }
 		&:active { border-bottom-style: solid; color: darken($c6, 10%); }
 	}
 	
@@ -60,7 +60,7 @@
 	position: relative;
 }
 .main-navigation a {
-	border-bottom: 2px dashed $c2;
+	border-bottom: 2px dashed $c4;
 	color: $c6;
 	display: block;
 	font: {
@@ -100,7 +100,7 @@
 .main-navigation li:focus > a { color: lighten($c6, 20%); }
 
 .main-navigation li:active > a {
-	border-bottom: 2px solid $c2;
+	border-bottom: 2px solid $c4;
 	color: darken($c6, 10%);
 }
 .main-navigation ul ul :hover > a {
@@ -113,7 +113,7 @@
 .main-navigation .current_page_item a,
 .main-navigation .current-menu-item a,
 .main-navigation .current-page-ancestor a {
-	border-bottom: 2px solid $c2;
+	border-bottom: 2px solid $c4;
 	font-weight: 700;
 }
 
