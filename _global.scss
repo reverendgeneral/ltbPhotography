@@ -12,7 +12,7 @@ select,
 textarea {
 	color: $c6;
 	font-family: $f-sans;
-	@include font-size();
+	@include font-size(16);
 }
 
 /* Headings */
@@ -31,9 +31,11 @@ p {
 	margin-bottom: 1.5rem;
 
 	@include font-size(20);
+
+	&:last-child { margin-bottom: 0; }
 }
 ul, ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 0 1.5rem 5.4rem;
 }
 ul {
 	list-style: disc;
@@ -44,7 +46,7 @@ ol {
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin-left: 1.5rem;
 }
 dt {
 	font-weight: bold;
@@ -248,6 +250,8 @@ a:active {
 	display: block;
 	margin: 0 auto;
 }
+
+.textcenter { text-align: center; }
 
 /* Text meant only for screen readers */
 .screen-reader-text {

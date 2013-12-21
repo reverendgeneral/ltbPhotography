@@ -60,7 +60,7 @@
 	position: relative;
 }
 .main-navigation a {
-	border-top: 2px solid transparent;
+	border-bottom: 2px dashed $c2;
 	color: $c6;
 	display: block;
 	font: {
@@ -97,10 +97,7 @@
 .main-navigation ul ul li {
 }
 .main-navigation li:hover > a,
-.main-navigation li:focus > a {
-	border-bottom: 2px dashed $c2;
-	color: lighten($c6, 20%);
-}
+.main-navigation li:focus > a { color: lighten($c6, 20%); }
 
 .main-navigation li:active > a {
 	border-bottom: 2px solid $c2;
@@ -114,7 +111,8 @@
 	display: block;
 }
 .main-navigation .current_page_item a,
-.main-navigation .current-menu-item a {
+.main-navigation .current-menu-item a,
+.main-navigation .current-page-ancestor a {
 	border-bottom: 2px solid $c2;
 	font-weight: 700;
 }
