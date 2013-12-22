@@ -1,0 +1,63 @@
+/* =Footer
+----------------------------------------------- */
+
+.site-footer {
+	border-top: 2px solid $c3;
+	margin: 2.8rem auto 5.6rem;
+	max-width: 1170px;
+	width: 90%;
+}
+
+.site-info {
+	margin-top: 2.8rem;
+	
+	p { @include font-size(16); }
+
+	a, a:visited {
+		color: $c6;
+		border-bottom: 2px dashed $c4;
+		font: {
+			family: $f-serif;
+			weight: 700;
+		}
+		text: {
+			decoration: none;
+			transform: uppercase;
+		}
+
+		@include font-size(14);
+
+		&:hover, &:focus { color: lighten($c6, 20%); }
+		&:active {
+			border-bottom-style: solid;
+			color: darken($c6, 10%);
+		}
+	}
+}
+
+.footer-social {
+
+	a {
+		margin: 0 0.5rem;
+		padding: 0 0.5rem 0.25rem;
+
+		&:nth-child(1):hover,
+		&:nth-child(1):focus {
+			color: #3b5998;
+			text-shadow:
+				1px 0px 1px $c5,
+				0px 1px 1px $c5;
+		}
+		&:nth-child(1):active { border-bottom-style: solid; }
+
+		&:nth-child(2) { margin-right: 0; }
+		&:nth-child(2):hover,
+		&:nth-child(2):focus {
+			color: #55acee;
+			text-shadow:
+				1px 0px 1px $c5,
+				0px 1px 1px $c5;
+		}
+		&:nth-child(2):active { border-bottom-style: solid; }
+	}
+}

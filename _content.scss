@@ -131,39 +131,4 @@
 	margin: 0 0 1.5em;
 }
 
-// footer
 footer.entry-meta { display: none; }
-
-.site-footer {
-	border-top: 2px solid $c3;
-	margin: 2.8rem auto 5.6rem;
-	max-width: 1170px;
-	width: 90%;
-}
-
-.site-info {
-	margin-top: 2.8rem;
-	
-	p { @include font-size(16); }
-
-	a, a:visited {
-		color: $c6;
-		border-bottom: 2px dashed $c4;
-		font: {
-			family: $f-serif;
-			weight: 700;
-		}
-		text: {
-			decoration: none;
-			transform: uppercase;
-		}
-
-		@include font-size(14);
-
-		&:hover, &:focus { color: lighten($c6, 20%); }
-		&:active {
-			border-bottom-style: solid;
-			color: darken($c6, 10%);
-		}
-	}
-}
