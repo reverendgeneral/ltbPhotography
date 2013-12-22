@@ -30,8 +30,8 @@
 	/*background: {
 		color: $c5;
 		image:
-			linear-gradient(90deg, rgba($c2,.5) 50%, transparent 50%),
-			linear-gradient(rgba($c2,.5) 50%, transparent 50%);
+			linear-gradient(90deg, rgba($c4,.5) 50%, transparent 50%),
+			linear-gradient(rgba($c4,.5) 50%, transparent 50%);
 		size:50px 50px;
 	}*/
 	background-color: $c4;
@@ -97,7 +97,7 @@
 		@include font-size(28);
 
 		a, a:visited {
-			border-bottom: 2px dashed $c2;
+			border-bottom: 2px dashed $c4;
 			color: $c5;
 			text-decoration: none;
 
