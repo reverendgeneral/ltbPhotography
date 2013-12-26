@@ -52,6 +52,8 @@ img[class*="wp-image-"], .soliloquy-item-image {
 div[id*="gallery-"] img {
 	border: 5px solid $c5 !important; //necessary to override global WP default styles in media.php
 	box-shadow: 0px 2px 10px lighten($c6, 20%);
+
+	&:hover { box-shadow: 0px 2px 10px darken($c6, 10%); }
 }
 
 /* Make sure embeds and iframes fit their containers */
