@@ -19,9 +19,9 @@ $c7: #fceabd; //tan
     font-size: $sizeValue + px;
     font-size: ($sizeValue / 10) + rem;
     line-height: $line;
-} // automatically apply rem font-size with px fallback and add 1.5 line-height. default is 16px/1.6rem+1.5
+}// automatically apply rem font-size with px fallback and add 1.5 line-height. default is 16px/1.6rem+1.5
 
 @mixin background($color){
 	background-color: $color;
 	background-image: url('http://localhost/wordpress/ltb/wp-content/uploads/sites/2/2013/12/bg1.png');
-} // background-color/-image mixin
+}// background-color/-image mixin
