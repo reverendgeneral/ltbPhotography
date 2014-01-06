@@ -80,6 +80,25 @@
 	}
 } //end .sessions-card-inner
 
+.contact-info, .contact-form {
+	margin: 0 2.5%;
+	width: 45%;
+}
+
+.contact-form {
+	h2 {
+		font: {
+			family: $f-serif;
+			variant: small-caps;
+			weight: 700;
+		}
+		margin-bottom: 1.5rem;
+		text-align: center;
+
+		@include font-size(28);
+	}
+}
+
 .serif-strong {
 	font: {
 		family: $f-serif;
