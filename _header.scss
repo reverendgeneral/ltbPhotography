@@ -69,7 +69,7 @@
 		family: $f-serif;
 		weight: 400;
 	}
-	margin: 0 0.9rem;
+	margin: 0 1rem;
 	padding: 0 0.4rem;
 	text: {
 		decoration: none;
@@ -121,7 +121,8 @@
 }
 .main-navigation .current_page_item a,
 .main-navigation .current-menu-item a,
-.main-navigation .current-menu-ancestor > a {
+.main-navigation .current-menu-ancestor > a,
+.main-navigation .current-page-ancestor > a {
 	border-bottom: 2px solid $c4;
 	font-weight: 700;
 }
@@ -135,11 +136,6 @@
 		content: " \21D3";
 		@include font-size(24);
 	}
-}
-
-.page-template-gallery-page .menu-item:nth-of-type(3) a {
-	font-weight: bold;
-	border-bottom-style: solid;
 }
 
 .gallery-navigation {
