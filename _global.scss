@@ -119,8 +119,12 @@ th {
 	font-weight: bold;
 }
 img {
+	border: 5px solid $c5;
+	box-shadow: 0 2px 10px lighten($c6, 20%);
 	height: auto; /* Make sure images are scaled correctly. */
 	max-width: 100%; /* Adhere to container width. */
+
+	&:hover { box-shadow: 0 2px 10px darken($c6, 10%); }
 }
 button,
 input,

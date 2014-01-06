@@ -58,6 +58,8 @@
 .main-navigation li {
 	float: left;
 	position: relative;
+
+	&:last-child > a { margin-right: 0; }
 }
 .main-navigation a {
 	border-bottom: 2px dashed $c4;
@@ -67,7 +69,7 @@
 		family: $f-serif;
 		weight: 400;
 	}
-	margin: 0 1.8rem;
+	margin: 0 0.9rem;
 	padding: 0 0.4rem;
 	text: {
 		decoration: none;
@@ -75,8 +77,6 @@
 	}
 
 	@include font-size(24);
-
-	&:last-child { margin-right: 0; }
 }
 .main-navigation ul ul {
 	background-color: rgba($c6, 0.9); 
@@ -137,6 +137,11 @@
 	}
 }
 
+.page-template-gallery-page .menu-item:nth-of-type(3) a {
+	font-weight: bold;
+	border-bottom-style: solid;
+}
+
 .gallery-navigation {
 	list-style: none;
 	margin: 0 0 2.8rem;
@@ -146,13 +151,12 @@
 	li {
 		display: inline;
 		
-		&.current-menu-item a{
+		&.current-menu-item a {
 			border-bottom: 2px solid $c2;
 			font-weight: 700;
 		}
 
-		&:hover > a,
-		&:focus > a { color: lighten($c6, 20%); }
+		&:hover > a, &:focus > a { color: lighten($c6, 20%); }
 		&:active > a { border-bottom-style: solid; color: darken($c6, 10%); }
 	}
 
