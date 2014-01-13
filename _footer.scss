@@ -44,9 +44,6 @@
 		&:nth-child(1):hover,
 		&:nth-child(1):focus {
 			color: #3b5998;
-			text-shadow:
-				1px 0px 1px $c5,
-				0px 1px 1px $c5;
 		}
 		&:nth-child(1):active { border-bottom-style: solid; }
 
@@ -54,9 +51,6 @@
 		&:nth-child(2):hover,
 		&:nth-child(2):focus {
 			color: #55acee;
-			text-shadow:
-				1px 0px 1px $c5,
-				0px 1px 1px $c5;
 		}
 		&:nth-child(2):active { border-bottom-style: solid; }
 	}
