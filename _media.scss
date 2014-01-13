@@ -1,6 +1,13 @@
 /* =Media
 ----------------------------------------------- */
 
+img {
+	border: none;
+	box-shadow: 0px 2px 6px lighten($c6, 20%);
+
+	&:hover { box-shadow: 0px 2px 6px darken($c6, 10%); }
+}
+
 .page-content img.wp-smiley,
 .entry-content img.wp-smiley,
 .comment-content img.wp-smiley {
@@ -15,10 +22,7 @@
 	max-width: 100%;
 }
 
-img[class*="wp-image-"], .soliloquy-item-image {
-	border: 5px solid $c5;
-	box-shadow: 0px 2px 10px lighten($c6, 20%);
-}
+img[class*="wp-image-"], .soliloquy-item-image { border: 5px solid $c5; box-shadow: none !important; }
 
 .wp-caption img[class*="wp-image-"] {
 	display: block;
@@ -50,10 +54,10 @@ img[class*="wp-image-"], .soliloquy-item-image {
 }
 
 div[id*="gallery-"] img {
-	border: 5px solid $c5 !important; //necessary to override global WP default styles in media.php
-	box-shadow: 0px 2px 10px lighten($c6, 20%);
+	border: none !important; //necessary to override global WP default styles in media.php
+	box-shadow: 0px 2px 6px lighten($c6, 20%);
 
-	&:hover { box-shadow: 0px 2px 10px darken($c6, 10%); }
+	&:hover { box-shadow: 0px 2px 6px darken($c6, 10%); }
 }
 
 /* Make sure embeds and iframes fit their containers */

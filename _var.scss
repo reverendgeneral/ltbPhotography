@@ -10,10 +10,10 @@ $c1: #ffff66; //yellow
 $c2: #8bcbff; //blue
 $c3: #85eb99; //green
 $c4: #ffa5d8; //pink
-$c5: #fefefe; //white
+$c5: #fdfdfd; //white
 $c6: #404040; //dark gray
 $c7: #fceabd; //tan
-$c8: #bada55; //bada55
+$c8: #9a9a9a; //light gray
 
 // mixins
 @mixin font-size($sizeValue: 16, $line: 1.5){
@@ -22,7 +22,4 @@ $c8: #bada55; //bada55
     line-height: $line;
 }// automatically apply rem font-size with px fallback and add 1.5 line-height. default is 16px/1.6rem+1.5
 
-@mixin background($color){
-	background-color: $color;
-	background-image: url('http://localhost/wordpress/wp-content/uploads/bg1.png');
-}// background-color/-image mixin
+@mixin background($color){ background-color: $color; }// background-color mixin

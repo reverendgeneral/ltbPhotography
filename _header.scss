@@ -2,8 +2,8 @@
 ----------------------------------------------- */
 
 .site-header {
-	border-bottom: 2px solid $c3;
-	margin: 5.6rem auto 2.8rem;
+	border-bottom: 2px solid $c5;
+	margin: 2.8rem auto;
 	max-width: 1170px;
 	width: 90%;
 }
@@ -21,19 +21,19 @@
 	@include font-size(36);
 
 	a, a:visited {
-		color: $c6;
+		color: $c5;
 		word-spacing: 20px;
 		text-decoration: none;
 
-		&:hover, &:focus { border-bottom: 2px dashed $c4; color: lighten($c6, 20%); }
-		&:active { border-bottom-style: solid; color: darken($c6, 10%); }
+		&:hover, &:focus { border-bottom: 2px dashed $c1; color: darken($c5, 15%); }
+		&:active { border-bottom-style: solid; color: $c5; }
 	}
 	
 	span {
 		position: relative;
 		
 		&:before {
-			background-color: $c3;
+			background-color: $c8;
 			content: "";
 			display: inline-block;
 			height: 54px;
@@ -62,8 +62,8 @@
 	&:last-child > a { margin-right: 0; }
 }
 .main-navigation a {
-	border-bottom: 2px dashed $c4;
-	color: $c6;
+	border-bottom: 2px dashed $c1;
+	color: $c5;
 	display: block;
 	font: {
 		family: $f-serif;
@@ -92,30 +92,17 @@
 	left: 100%;
 	top: 0;
 }
-.main-navigation ul ul a {
-	color: $c5;
-	margin: 0.5rem auto;
-	width: 15rem;
-	padding: 0 0.5rem;
-	text-align: center;
-	@include font-size(16);
-
-	&:hover, &:focus { color: darken($c5, 20%); }
-	&:active { border-bottom-style: solid; color: $c5; }
-}
-.main-navigation ul ul li {
-}
+.main-navigation ul ul a {}
+.main-navigation ul ul li {}
 .main-navigation li:hover > a,
-.main-navigation li:focus > a { color: lighten($c6, 20%); }
+.main-navigation li:focus > a { color: darken($c5, 15%); }
 
 .main-navigation li:active > a {
-	border-bottom: 2px solid $c4;
-	color: darken($c6, 10%);
+	border-bottom: 2px solid $c1;
+	color: $c5;
 }
-.main-navigation ul ul :hover > a {
-}
-.main-navigation ul ul a:hover {
-}
+.main-navigation ul ul :hover > a {}
+.main-navigation ul ul a:hover {}
 .main-navigation ul li:hover > ul {
 	display: block;
 }
@@ -123,20 +110,11 @@
 .main-navigation .current-menu-item a,
 .main-navigation .current-menu-ancestor > a,
 .main-navigation .current-page-ancestor > a {
-	border-bottom: 2px solid $c4;
+	border-bottom: 2px solid $c1;
 	font-weight: 700;
 }
 
-.menu-item-has-children > a {
-	cursor: default;
-	margin-right: 0;
-
-	&:after {
-		color: $c6;
-		content: " \21D3";
-		@include font-size(24);
-	}
-}
+.menu-item-has-children > a {}
 
 .gallery-navigation {
 	list-style: none;
@@ -148,16 +126,16 @@
 		display: inline;
 		
 		&.current-menu-item a {
-			border-bottom: 2px solid $c2;
+			border-bottom: 2px solid $c4;
 			font-weight: 700;
 		}
 
-		&:hover > a, &:focus > a { color: lighten($c6, 20%); }
-		&:active > a { border-bottom-style: solid; color: darken($c6, 10%); }
+		&:hover > a, &:focus > a { color: darken($c5, 15%); }
+		&:active > a { border-bottom-style: solid; color: $c5; }
 	}
 
 	a {
-		border-bottom: 2px dashed $c2;
+		border-bottom: 2px dashed $c4;
 		color: $c6;
 		display: inline-block;
 		font: {

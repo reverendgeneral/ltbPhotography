@@ -1,6 +1,8 @@
 /* =Content
 ----------------------------------------------- */
 
+.home .entry-content { padding: 0; }
+
 .home .entry-content p { margin: 0; }
 
 .entry-title { display: none; }
@@ -21,8 +23,10 @@
 .page-content,
 .entry-content,
 .entry-summary {
+	background-color: $c5;
 	margin: 0 auto;
 	max-width: 1170px;
+	padding: 3rem 4rem;
 	width: 90%;
 }
 
