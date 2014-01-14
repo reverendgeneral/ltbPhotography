@@ -7,12 +7,19 @@
 	margin: 2.8rem auto 1.4rem;
 	max-width: 1170px;
 	width: 90%;
+
+	@include bp(delta) { text-align: center; }
 }
 
 .site-info {
 	margin-top: 1.4rem;
-	
-	p { @include font-size(20); }
+
+	p {
+		@include font-size(20);
+		@include bp(alpha) { @include font-size(16); }
+		@include bp(charlie) { @include font-size(14); }
+		@include bp(delta) { clear: both; display: block; float: none !important; }
+	}
 
 	a, a:visited {
 		color: $c5;
@@ -27,6 +34,8 @@
 		}
 
 		@include font-size(16);
+		@include bp(alpha) { @include font-size(14); }
+		@include bp(charlie) { @include font-size(12); }
 
 		&:hover, &:focus { color: darken($c5, 15%); }
 		&:active {
@@ -37,12 +46,15 @@
 }
 
 .footer-social {
+	@include bp(delta) { clear: both; display: block; float: none; margin: 0 auto; text-align: center; }
 
 	a {
 		margin: 0 0.5rem;
 		padding: 0 0.5rem 0.25rem;
 
 		@include font-size(12);
+		@include bp(alpha) { @include font-size(10); }
+		@include bp(charlie) { @include font-size(8); }
 
 		&:nth-child(1):hover,
 		&:nth-child(1):focus {

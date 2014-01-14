@@ -143,21 +143,8 @@ p a {
 }
 
 .contact-form {
-
-	@include bp(alpha) { padding: 2rem 3rem; }
-	@include bp(charlie) { padding: 1.5rem 2rem;}
-
-	h2 {
-		font: {
-			family: $f-serif;
-			variant: small-caps;
-			weight: 700;
-		}
-		margin-bottom: 1.5rem;
-		text-align: center;
-
-		@include font-size(28);
-	}
+	@include bp(alpha) { margin-bottom: 0; padding: 2rem 3rem 0; }
+	@include bp(charlie) { margin-bottom: 0; padding: 1.5rem 2rem 0;}
 }
 
 .serif-strong {
