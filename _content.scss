@@ -93,7 +93,9 @@ p a {
 	margin: 5.4rem;
 	padding: 1.5rem 3rem;
 
-	@include bp(alpha) { margin: 4rem; }
+	@include bp(alpha) { margin: 4rem; padding: 1rem 2rem; }
+	@include bp(beta) { margin: 5.4rem; padding: 1.5rem 3rem; }
+	@include bp(charlie) { margin: 4rem; }
 
 	h2 {
 		font: {
@@ -136,9 +138,15 @@ p a {
 .contact-info, .contact-form {
 	margin: 0 2.5%;
 	width: 45%;
+
+	@include bp(alpha) { clear: both; display: block; width: 100%; }
 }
 
 .contact-form {
+
+	@include bp(alpha) { padding: 2rem 3rem; }
+	@include bp(charlie) { padding: 1.5rem 2rem;}
+
 	h2 {
 		font: {
 			family: $f-serif;
