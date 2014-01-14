@@ -32,10 +32,13 @@ p {
 
 	@include font-size(24);
 
+	@include bp(alpha) { @include font-size(20); }
+	@include bp(charlie) { @include font-size(16); }
+
 	&:last-child { margin-bottom: 0; }
 }
 ul, ol {
-	margin: 0 0 1.5rem 5.4rem;
+	margin: 0 0 1.5rem 2.8rem;
 }
 ul {
 	list-style: disc;

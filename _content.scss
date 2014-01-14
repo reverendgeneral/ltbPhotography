@@ -28,6 +28,9 @@
 	max-width: 1170px;
 	padding: 3rem 4rem;
 	width: 90%;
+
+	@include bp(alpha) { padding: 2rem 3rem; }
+	@include bp(charlie) { padding: 1.5rem 2rem;}
 }
 
 p a {
@@ -53,8 +56,14 @@ p a {
 	&:active { border-bottom-style: solid; color: darken($c6, 10%) !important; }
 }
 
-.sessions--left { float: left; width: 50%; }
-.sessions--right { float: right; width: 50%; }
+.sessions--left {
+	float: left; width: 50%;
+	@include bp(beta) { clear: both; float: none; width: 100%; }
+}
+.sessions--right {
+	float: right; width: 50%;
+	@include bp(beta) { clear: both; float: none; width: 100%; }
+}
 
 .sessions__card--border {
 	/*background: {
@@ -84,6 +93,8 @@ p a {
 	margin: 5.4rem;
 	padding: 1.5rem 3rem;
 
+	@include bp(alpha) { margin: 4rem; }
+
 	h2 {
 		font: {
 			family: $f-serif;
@@ -97,18 +108,28 @@ p a {
 		}
 
 		@include font-size(32);
+		@include bp(alpha) { @include font-size(24); }
+		@include bp(beta) { @include font-size(22); }
+		@include bp(charlie) { @include font-size(20); }
+		@include bp(delta) { @include font-size(18); }
 	}
 
 	p {
 		font-weight: 700;
 
 		@include font-size(22);
+		@include bp(alpha) { @include font-size(20); }
+		@include bp(beta) { @include font-size(18); }
+		@include bp(charlie) { @include font-size(14); }
 	}
 
 	ul {
 		list-style: square;
 
 		@include font-size(24);
+		@include bp(alpha) { margin-left: 0.4rem; @include font-size(22); }
+		@include bp(beta) { margin-left: 2.8rem; @include font-size(20); }
+		@include bp(charlie) { margin-left: 0.4rem; @include font-size(14); }
 	}
 } //end .sessions__card
 
@@ -139,6 +160,9 @@ p a {
 	text-transform: uppercase;
 
 	@include font-size(18);
+
+	@include bp(alpha) { @include font-size(16); }
+	@include bp(charlie) { @include font-size(12); }
 }
 
 .page-links {

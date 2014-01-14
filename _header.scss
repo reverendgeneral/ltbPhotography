@@ -65,6 +65,7 @@
 	display: block;
 	float: left;
 	width: 50%;
+	position: relative;
 
 	@include bp(alpha) {
 		float: none;
@@ -80,9 +81,7 @@
 		width: 85%;
 	}
 
-	//@include bp(delta) { display: none; }
-
-	//&.toggled .nav-menu { @include bp(delta) { display: block; } }
+	&.toggled .nav-menu { @include bp(delta) { display: block; } }
 }
 .main-navigation ul {
 	float: right;
@@ -98,6 +97,10 @@
 	}
 
 	@include bp(charlie) { float: right; }
+	@include bp(delta) {
+		display: none;
+		float: right;
+	}
 }
 .main-navigation li {
 	float: left;
@@ -109,8 +112,15 @@
 	}
 
 	@include bp(charlie) { float: left; }
+	@include bp(delta) {
+		display: block;
+		float: right;
+		width: 100%;
+	}
 
-	&:last-child > a { margin-right: 0; }
+	&:last-child > a {
+		margin-right: 0;
+	}
 }
 .main-navigation a {
 	border-bottom: 2px dashed $c1;
@@ -128,6 +138,14 @@
 	}
 
 	@include font-size(28);
+	@include bp(alpha) { @include font-size(22); }
+	@include bp(beta) { @include font-size(20); }
+	@include bp(delta) {
+		display: block;
+		float: right;
+		margin: 0.4rem 0;
+		width: 9rem;
+	}
 }
 .main-navigation ul ul {
 	background-color: rgba($c6, 0.9); 
@@ -178,6 +196,8 @@
 	li {
 		display: inline;
 		
+		@include bp(beta) { text-align: left; }
+
 		&.current-menu-item a {
 			border-bottom: 2px solid $c4;
 			font-weight: 700;
@@ -203,25 +223,25 @@
 		}
 
 		@include font-size(22);
-		}
+
+		@include bp(alpha) { margin: 0 0.5rem; @include font-size(20); }
+		@include bp(beta) { display: block; margin: 0.5rem 0; @include font-size(18); }
+		@include bp(charlie) { margin: 1rem 0; @include font-size(16); }
+	}
 }
 
 /* Small menu */
-.menu-toggle {
+.main-navigation .menu-toggle {
+	border: none;
 	cursor: pointer;
 	display: none;
 
-	@include bp(delta) { display: block; }
-}
-
-@media screen and (max-width: 560px) {
-	.menu-toggle,
-	.main-navigation.toggled .nav-menu {
+	@include bp(delta) {
 		color: $c5;
 		display: block;
-	}
+		float: right;
+		margin-top: 1rem;
 
-	.main-navigation ul {
-		display: none;
+		@include font-size(24);
 	}
 }
