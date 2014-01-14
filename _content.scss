@@ -84,6 +84,40 @@
 	}
 } //end .sessions-card-inner
 
+.session {
+	//margin: 3rem 4.5rem;
+
+	h2 {
+		font: {
+			family: $f-serif;
+			variant: small-caps;
+			weight: 700;
+		}
+		margin-bottom: 1.5rem;
+		text: { 
+			align: center;
+			decoration: underline;
+		}
+
+		@include font-size(28);
+	}
+
+	p {
+		font-weight: 600;
+
+		@include font-size(20);
+	}
+
+	ul {
+		list-style: square;
+
+		@include font-size(20);
+	}
+}
+
+.session--left { border-right: 1px solid $c6; float: left; width: 50%; }
+.session--right { float: right; width: 50%; }
+
 .contact-info, .contact-form {
 	margin: 0 2.5%;
 	width: 45%;
