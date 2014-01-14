@@ -30,7 +30,7 @@ hr {
 p {
 	margin-bottom: 1.5rem;
 
-	@include font-size(20);
+	@include font-size(24);
 
 	&:last-child { margin-bottom: 0; }
 }
@@ -152,7 +152,7 @@ input[type="submit"] {
     display: block;
     font-weight: 700;
     margin: 2.8rem 0 0 6px;
-    padding: .75rem 1.75rem;
+    padding: 0.75rem 2.5rem;
     text-transform: uppercase;
     -webkit-transition: all .3s ease;
        -moz-transition: all .3s ease;
@@ -160,7 +160,7 @@ input[type="submit"] {
          -o-transition: all .3s ease;
             transition: all .3s ease;
 
-    @include font-size(16);
+    @include font-size(20);
 
 }
 button:hover,
@@ -177,7 +177,7 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-	font-weight: 600;
+	font-weight: 400;
 }
 input[type="checkbox"],
 input[type="radio"] {

@@ -3,7 +3,7 @@
 
 .site-header {
 	border-bottom: 2px solid $c5;
-	margin: 2.8rem auto;
+	margin: 1.4rem auto 2.8rem;
 	max-width: 1170px;
 	width: 90%;
 }
@@ -18,9 +18,10 @@
 	letter-spacing: 0.4rem;
 	margin-bottom: 1rem;
 	text-transform: uppercase;
-	@include font-size(36);
+	@include font-size(40);
 
 	a, a:visited {
+		border-bottom: none;
 		color: $c5;
 		word-spacing: 20px;
 		text-decoration: none;
@@ -76,7 +77,7 @@
 		transform: lowercase;
 	}
 
-	@include font-size(24);
+	@include font-size(28);
 }
 .main-navigation ul ul {
 	background-color: rgba($c6, 0.9); 
@@ -149,7 +150,7 @@
 			transform: uppercase;
 		}
 
-		@include font-size(16);
+		@include font-size(22);
 		}
 }
 
