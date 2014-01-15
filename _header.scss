@@ -37,8 +37,9 @@
 	a, a:visited {
 		border-bottom: none;
 		color: $c5;
-		word-spacing: 20px;
+		font-family: $f-title;
 		text-decoration: none;
+		word-spacing: 20px;
 
 		&:hover, &:focus { border-bottom: 2px dashed $c1; color: darken($c5, 15%); }
 		&:active { border-bottom-style: solid; color: $c5; }
@@ -77,7 +78,7 @@
 	@include bp(charlie) {
 		display: block;
 		float: left;
-		margin-top: 0.4rem;
+		margin-top: 1.4rem;
 		width: 85%;
 	}
 
@@ -138,7 +139,7 @@
 	}
 
 	@include font-size(28);
-	@include bp(alpha) { @include font-size(22); }
+	@include bp(alpha) { &:first-child { margin-left: 0; } @include font-size(22); }
 	@include bp(beta) { @include font-size(20); }
 	@include bp(delta) {
 		display: block;
@@ -240,7 +241,7 @@
 		color: $c5;
 		display: block;
 		float: right;
-		margin-top: 1rem;
+		margin-top: 0.4rem;
 
 		@include font-size(24);
 	}
